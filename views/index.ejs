@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+      }
+
+      h1 {
+        color: #333;
+        text-align: center;
+      }
+
+      h3 {
+        color: #444;
+        margin-bottom: 5px;
+      }
+
+      p {
+        color: #666;
+        margin: 0 0 15px;
+      }
+
+      .product {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 15px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      form {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      input[type="submit"] {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #218838;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Shopping Cart</h1>
+
+    <div class="product">
+      <h3>Node.js and Express book</h3>
+      <p>Price: $25.00</p>
+      <p>Quantity: 1</p>
+    </div>
+
+    <div class="product">
+      <h3>JavaScript book</h3>
+      <p>Price: $50.00</p>
+      <p>Quantity: 5</p>
+    </div>
+
+    <form action="/checkout" method="post">
+      <input type="submit" value="Proceed to Checkout" />
+    </form>
+  </body>
+</html>
